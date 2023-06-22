@@ -5,7 +5,7 @@ export const environment = {
     apiUrl: 'http://localhost:3333/',
 
     // DB
-    mongoUri: 'mongodb://127.0.0.1:27017/mini_prj_web',
+    mongoUri: 'mongodb://127.0.0.1:27017/agence_immobiliere',
 
     // JWT
     jwtSecret: 'immobiliere-nest-local-secretKey-001',

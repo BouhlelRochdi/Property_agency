@@ -4,9 +4,6 @@ import { UpdateUserDto, UserBase } from '../users/dto/user-dto';
 
 import { UserService } from '../users/user.service';
 import { JwtUserPayload } from './dto/jwt.use.payload';
-
-const users = require('./dto/users.json');
-
 @Injectable()
 export class AuthService {
 

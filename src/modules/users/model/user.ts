@@ -14,7 +14,7 @@ export class User extends UserBase {
   @Prop() password: string;
   @Prop() adress: string;
   @Prop() phone: string;
-  @Prop() cvLink: string;
+  @Prop() role: string;
   @Prop() photo: string;
   @Prop() logo: string;
   @Prop() matFiscal: string;

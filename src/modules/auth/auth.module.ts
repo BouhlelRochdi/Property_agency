@@ -3,9 +3,9 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
-import { environment } from 'src/environment/environment';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { UserModule } from '../users/user.module';
+import { environment } from 'src/environements/environement';
 
 @Module({
   imports: [
