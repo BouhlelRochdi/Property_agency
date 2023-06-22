@@ -2,10 +2,15 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
+import { MongooseConfigService } from './config/mongoose/mongoose.config.service';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://127.0.0.1/agence')],
+  imports: [
+    MongooseModule.forRootAsync({
+      useClass: MongooseConfigService,
+    }),
+  ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, MongooseConfigService],
 })
 export class AppModule {}
